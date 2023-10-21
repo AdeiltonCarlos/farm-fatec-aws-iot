@@ -6,7 +6,7 @@ Acessar o windows explorer e "zipar" os arquivos, neste exemplo, lambda.py e req
 
 ### Linux
 ```shell
-zip iot-consumo-energia.zip lambda.py requirements.txt
+zip iot-refrigeracao.zip lambda.py requirements.txt
 ```
 
 ## Passo 2 - Setar as variáveis
@@ -14,8 +14,8 @@ zip iot-consumo-energia.zip lambda.py requirements.txt
 ### Windows
 
 ```shell
-SET NOME_FUNCAO=iot-consumo-energia-lambda
-SET ARQUIVO_ZIP=iot-consumo-energia.zip
+SET NOME_FUNCAO=iot-refrigeracao-lambda
+SET ARQUIVO_ZIP=iot-refrigeracao.zip
 SET ARN_DA_ROLE_PARA_PUBLICACAO=arn:aws:iam::978177253869:role/LabRole
 SET NOME_ARQUIVO=lambda
 SET METODO_DEFINIDO_NO_ARQUIVO_PYTHON=lambda_handler
@@ -24,8 +24,8 @@ SET HANDLER=%NOME_ARQUIVO%.%METODO_DEFINIDO_NO_ARQUIVO_PYTHON%
 
 ### Linux
 ```shell
-export NOME_FUNCAO=iot-consumo-energia-lambda
-export ARQUIVO_ZIP=iot-consumo-energia-lambda.zip
+export NOME_FUNCAO=iot-refrigeracao-lambda
+export ARQUIVO_ZIP=iot-refrigeracao-lambda.zip
 export ARN_DA_ROLE_PARA_PUBLICACAO=arn:aws:iam::721974128630:role/LabRole
 export NOME_ARQUIVO=lambda
 export METODO_DEFINIDO_NO_ARQUIVO_PYTHON=lambda_handler
