@@ -41,6 +41,15 @@ Exemplo de um payload em SQS
 """
 def lambda_handler(event, context):
 
+    #event
+    #As informações que serão 'tratadas/recebidas' estão dentro da variável event
+
+    #context
+    #É o contexto/instância/domínio de serviços que o serviço
+    #  utilizador (lambda) pode acessar/identificar
+
+
+
     #Nome da função com ARN (item identificador)
     logger.info(f"Lambda function ARN: {context.invoked_function_arn}")
     
